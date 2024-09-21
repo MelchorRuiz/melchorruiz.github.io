@@ -1,12 +1,35 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { HeroComponent } from "./hero/hero.component";
+import { AboutComponent } from "./about/about.component";
+import { ExperienceComponent } from "./experience/experience.component";
+import { EducationComponent } from "./education/education.component";
+import { ProjectsComponent } from "./projects/projects.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html'
+  imports: [RouterOutlet, HeroComponent, AboutComponent, ExperienceComponent, EducationComponent, ProjectsComponent],
+  template: `
+    <header class="max-w-[650px] mx-auto pt-5 md:pt-20 px-4">
+      <app-hero />
+    </header>
+    <main class="max-w-[650px] mx-auto pb-5 px-4">
+      <app-about />
+      <app-experience />
+      <app-education />
+      <app-projects />
+    </main>
+    <footer class="flex justify-center py-2 px-4">
+      <p>&copy; {{ currentYear }} Melchor Ruiz. Todos los derechos reservados.</p>
+    </footer>
+  `
 })
-export class AppComponent {
-  title = 'MelchorRuiz';
+export class AppComponent implements OnInit {
+  currentYear: number = 0;
+
+  ngOnInit() {
+    this.currentYear = new Date().getFullYear();
+  }
+  
 }
