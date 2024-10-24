@@ -23,7 +23,7 @@ import { TechnologiesComponent } from "./technologies/technologies.component";
       <app-projects />
     </main>
     <footer class="flex justify-center py-2 px-4">
-      <p>&copy; {{ currentYear }} Melchor Ruiz. Todos los derechos reservados.</p>
+      <p>&copy; {{ currentYear }} Melchor Ruiz. <span i18n>Todos los derechos reservados.</span></p>
     </footer>
   `
 })
