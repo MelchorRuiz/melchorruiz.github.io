@@ -10,6 +10,38 @@
           <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1715206049042305289" datatype="html">
+        <source>Hola, Soy Melchor Ruiz</source>
+        <target>Bonjour, je m'appelle Melchor RUIZ</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.ts</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7447844733777280396" datatype="html">
+        <source>Desarrollador de software</source>
+        <target>Développeur de logiciels</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.ts</context>
+          <context context-type="linenumber">11,12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4142564054444307353" datatype="html">
+        <source>Orleans, Centro-Valle del Loira, Francia</source>
+        <target>Orléans, Centre-Val de Loire, France</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.ts</context>
+          <context context-type="linenumber">12,13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="847724028546997054" datatype="html">
+        <source>Currículum</source>
+        <target>Curriculum</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/hero/hero.component.ts</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
