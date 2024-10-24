@@ -33868,20 +33868,50 @@ var AboutComponent = class _AboutComponent {
     features: [ɵɵStandaloneFeature],
     decls: 8,
     vars: 0,
-    consts: [[1, "text-2xl", "font-semibold", "py-2"], [1, "py-1"]],
+    consts: () => {
+      let i18n_0;
+      if (false) {
+        const MSG_EXTERNAL_2379082776169073909$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_0 = goog.getMsg("Acerca de");
+        i18n_0 = MSG_EXTERNAL_2379082776169073909$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_0;
+      } else {
+        i18n_0 = "\xC0 propos";
+      }
+      let i18n_1;
+      if (false) {
+        const MSG_EXTERNAL_8710714495247258961$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_1 = goog.getMsg("Me apasiona la tecnolog\xEDa y la programaci\xF3n, y estoy constantemente actualiz\xE1ndome mediante cursos de inform\xE1tica.");
+        i18n_1 = MSG_EXTERNAL_8710714495247258961$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_1;
+      } else {
+        i18n_1 = "Je suis passionn\xE9 par la technologie et la programmation, et je me mets constamment \xE0 jour gr\xE2ce \xE0 des cours d'informatique.";
+      }
+      let i18n_2;
+      if (false) {
+        const MSG_EXTERNAL_431992726386453248$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_2 = goog.getMsg("Actualmente me enfoco en el desarrollo fullstack por la versatilidad que ofrece, permiti\xE9ndome trabajar eficazmente al mismo tiempo en el frontend y el backend.");
+        i18n_2 = MSG_EXTERNAL_431992726386453248$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_2;
+      } else {
+        i18n_2 = "Actuellement, je me concentre sur le d\xE9veloppement fullstack pour la polyvalence qu'il offre, me permettant de travailler efficacement \xE0 la fois sur le frontend et le backend.";
+      }
+      let i18n_3;
+      if (false) {
+        const MSG_EXTERNAL_3261171532766225725$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_3 = goog.getMsg("En mi tiempo libre, disfruto explorando nuevos proyectos y desaf\xEDos.");
+        i18n_3 = MSG_EXTERNAL_3261171532766225725$$SRC_APP_ABOUT_ABOUT_COMPONENT_TS_3;
+      } else {
+        i18n_3 = "Pendant mon temps libre, j'aime explorer de nouveaux projets et d\xE9fis.";
+      }
+      return [i18n_0, i18n_1, i18n_2, i18n_3, [1, "text-2xl", "font-semibold", "py-2"], [1, "py-1"]];
+    },
     template: function AboutComponent_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "h2", 0);
-        ɵɵtext(1, "Acerca de");
+        ɵɵelementStart(0, "h2", 4);
+        ɵɵi18n(1, 0);
         ɵɵelementEnd();
-        ɵɵelementStart(2, "p", 1);
-        ɵɵtext(3, "Me apasiona la tecnolog\xEDa y la programaci\xF3n, y estoy constantemente actualiz\xE1ndome mediante cursos de inform\xE1tica.");
+        ɵɵelementStart(2, "p", 5);
+        ɵɵi18n(3, 1);
         ɵɵelementEnd();
-        ɵɵelementStart(4, "p", 1);
-        ɵɵtext(5, "Actualmente me enfoco en el desarrollo fullstack por la versatilidad que ofrece, permiti\xE9ndome trabajar eficazmente al mismo tiempo en el frontend y el backend.");
+        ɵɵelementStart(4, "p", 5);
+        ɵɵi18n(5, 2);
         ɵɵelementEnd();
-        ɵɵelementStart(6, "p", 1);
-        ɵɵtext(7, "En mi tiempo libre, disfruto explorando nuevos proyectos y desaf\xEDos.");
+        ɵɵelementStart(6, "p", 5);
+        ɵɵi18n(7, 3);
         ɵɵelementEnd();
       }
     },
@@ -33916,7 +33946,7 @@ var jobs_default = jobs;
 var _forTrack0 = ($index, $item) => $item.id;
 function ExperienceComponent_For_4_For_16_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "li", 8);
+    ɵɵelementStart(0, "li", 9);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -33928,9 +33958,9 @@ function ExperienceComponent_For_4_For_16_Template(rf, ctx) {
 }
 function ExperienceComponent_For_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 2)(1, "div", 3);
-    ɵɵelement(2, "img", 4);
-    ɵɵelementStart(3, "div")(4, "h5", 5);
+    ɵɵelementStart(0, "div", 3)(1, "div", 4);
+    ɵɵelement(2, "img", 5);
+    ɵɵelementStart(3, "div")(4, "h5", 6);
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementStart(6, "p");
@@ -33942,11 +33972,11 @@ function ExperienceComponent_For_4_Template(rf, ctx) {
     ɵɵelementStart(10, "p");
     ɵɵtext(11);
     ɵɵelementEnd();
-    ɵɵelementStart(12, "p", 6);
+    ɵɵelementStart(12, "p", 7);
     ɵɵtext(13);
     ɵɵelementEnd()()();
-    ɵɵelementStart(14, "ul", 7);
-    ɵɵrepeaterCreate(15, ExperienceComponent_For_4_For_16_Template, 2, 1, "li", 8, ɵɵrepeaterTrackByIdentity);
+    ɵɵelementStart(14, "ul", 8);
+    ɵɵrepeaterCreate(15, ExperienceComponent_For_4_For_16_Template, 2, 1, "li", 9, ɵɵrepeaterTrackByIdentity);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
@@ -33979,14 +34009,23 @@ var ExperienceComponent = class _ExperienceComponent {
     features: [ɵɵStandaloneFeature],
     decls: 5,
     vars: 0,
-    consts: [[1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "flex", "gap-4"], ["alt", "", 1, "size-20", "rounded-full", 3, "src"], [1, "text-xl", "font-medium"], [1, "text-sm"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]],
+    consts: () => {
+      let i18n_0;
+      if (false) {
+        const MSG_EXTERNAL_3839418929735297411$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_0 = goog.getMsg("Experiencia");
+        i18n_0 = MSG_EXTERNAL_3839418929735297411$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_0;
+      } else {
+        i18n_0 = "Exp\xE9rience";
+      }
+      return [i18n_0, [1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "flex", "gap-4"], ["alt", "", 1, "size-20", "rounded-full", 3, "src"], [1, "text-xl", "font-medium"], [1, "text-sm"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]];
+    },
     template: function ExperienceComponent_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "h2", 0);
-        ɵɵtext(1, "Experiencia");
+        ɵɵelementStart(0, "h2", 1);
+        ɵɵi18n(1, 0);
         ɵɵelementEnd();
-        ɵɵelementStart(2, "div", 1);
-        ɵɵrepeaterCreate(3, ExperienceComponent_For_4_Template, 17, 9, "div", 2, _forTrack0);
+        ɵɵelementStart(2, "div", 2);
+        ɵɵrepeaterCreate(3, ExperienceComponent_For_4_Template, 17, 9, "div", 3, _forTrack0);
         ɵɵelementEnd();
       }
       if (rf & 2) {
@@ -34029,7 +34068,7 @@ var schools_default = schools;
 var _forTrack02 = ($index, $item) => $item.id;
 function EducationComponent_For_4_For_12_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "li", 7);
+    ɵɵelementStart(0, "li", 8);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -34041,9 +34080,9 @@ function EducationComponent_For_4_For_12_Template(rf, ctx) {
 }
 function EducationComponent_For_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 2)(1, "div", 3);
-    ɵɵelement(2, "img", 4);
-    ɵɵelementStart(3, "div")(4, "h5", 5);
+    ɵɵelementStart(0, "div", 3)(1, "div", 4);
+    ɵɵelement(2, "img", 5);
+    ɵɵelementStart(3, "div")(4, "h5", 6);
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementStart(6, "p");
@@ -34052,8 +34091,8 @@ function EducationComponent_For_4_Template(rf, ctx) {
     ɵɵelementStart(8, "p");
     ɵɵtext(9);
     ɵɵelementEnd()()();
-    ɵɵelementStart(10, "ul", 6);
-    ɵɵrepeaterCreate(11, EducationComponent_For_4_For_12_Template, 2, 1, "li", 7, ɵɵrepeaterTrackByIdentity);
+    ɵɵelementStart(10, "ul", 7);
+    ɵɵrepeaterCreate(11, EducationComponent_For_4_For_12_Template, 2, 1, "li", 8, ɵɵrepeaterTrackByIdentity);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
@@ -34082,14 +34121,23 @@ var EducationComponent = class _EducationComponent {
     features: [ɵɵStandaloneFeature],
     decls: 5,
     vars: 0,
-    consts: [[1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "flex", "gap-4"], ["alt", "", 1, "size-20", "rounded-full", 3, "src"], [1, "text-xl", "font-medium"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]],
+    consts: () => {
+      let i18n_0;
+      if (false) {
+        const MSG_EXTERNAL_6247950905185402673$$SRC_APP_EDUCATION_EDUCATION_COMPONENT_TS_0 = goog.getMsg("Educaci\xF3n");
+        i18n_0 = MSG_EXTERNAL_6247950905185402673$$SRC_APP_EDUCATION_EDUCATION_COMPONENT_TS_0;
+      } else {
+        i18n_0 = "\xC9ducation";
+      }
+      return [i18n_0, [1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "flex", "gap-4"], ["alt", "", 1, "size-20", "rounded-full", 3, "src"], [1, "text-xl", "font-medium"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]];
+    },
     template: function EducationComponent_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "h2", 0);
-        ɵɵtext(1, "Educaci\xF3n");
+        ɵɵelementStart(0, "h2", 1);
+        ɵɵi18n(1, 0);
         ɵɵelementEnd();
-        ɵɵelementStart(2, "div", 1);
-        ɵɵrepeaterCreate(3, EducationComponent_For_4_Template, 13, 5, "div", 2, _forTrack02);
+        ɵɵelementStart(2, "div", 2);
+        ɵɵrepeaterCreate(3, EducationComponent_For_4_Template, 13, 5, "div", 3, _forTrack02);
         ɵɵelementEnd();
       }
       if (rf & 2) {
@@ -34120,9 +34168,9 @@ var projects_default = projects;
 
 // src/app/projects/projects.component.ts
 var _forTrack03 = ($index, $item) => $item.id;
-function ProjectsComponent_For_4_For_17_Template(rf, ctx) {
+function ProjectsComponent_For_4_For_19_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "li", 12);
+    ɵɵelementStart(0, "li", 15);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -34134,30 +34182,32 @@ function ProjectsComponent_For_4_For_17_Template(rf, ctx) {
 }
 function ProjectsComponent_For_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 2)(1, "div")(2, "h5", 3);
+    ɵɵelementStart(0, "div", 5)(1, "div")(2, "h5", 6);
     ɵɵtext(3);
     ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 4)(5, "a", 5);
+    ɵɵelementStart(4, "div", 7)(5, "a", 8);
     ɵɵnamespaceSVG();
-    ɵɵelementStart(6, "svg", 6);
-    ɵɵelement(7, "path", 7);
-    ɵɵelementEnd();
-    ɵɵtext(8, " C\xF3digo fuente ");
+    ɵɵelementStart(6, "svg", 9);
+    ɵɵelement(7, "path", 10);
     ɵɵelementEnd();
     ɵɵnamespaceHTML();
-    ɵɵelementStart(9, "a", 5);
+    ɵɵelementStart(8, "span");
+    ɵɵi18n(9, 1);
+    ɵɵelementEnd()();
+    ɵɵelementStart(10, "a", 8);
     ɵɵnamespaceSVG();
-    ɵɵelementStart(10, "svg", 8);
-    ɵɵelement(11, "path", 9);
+    ɵɵelementStart(11, "svg", 11);
+    ɵɵelement(12, "path", 12);
     ɵɵelementEnd();
-    ɵɵtext(12, " Ver proyecto ");
-    ɵɵelementEnd()();
     ɵɵnamespaceHTML();
-    ɵɵelementStart(13, "p", 10);
-    ɵɵtext(14);
+    ɵɵelementStart(13, "span");
+    ɵɵi18n(14, 2);
+    ɵɵelementEnd()()();
+    ɵɵelementStart(15, "p", 13);
+    ɵɵtext(16);
     ɵɵelementEnd()();
-    ɵɵelementStart(15, "ul", 11);
-    ɵɵrepeaterCreate(16, ProjectsComponent_For_4_For_17_Template, 2, 1, "li", 12, ɵɵrepeaterTrackByIdentity);
+    ɵɵelementStart(17, "ul", 14);
+    ɵɵrepeaterCreate(18, ProjectsComponent_For_4_For_19_Template, 2, 1, "li", 15, ɵɵrepeaterTrackByIdentity);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
@@ -34166,9 +34216,9 @@ function ProjectsComponent_For_4_Template(rf, ctx) {
     ɵɵtextInterpolate(project_r2.name);
     ɵɵadvance(2);
     ɵɵpropertyInterpolate("href", project_r2.github, ɵɵsanitizeUrl);
-    ɵɵadvance(4);
-    ɵɵpropertyInterpolate("href", project_r2.link, ɵɵsanitizeUrl);
     ɵɵadvance(5);
+    ɵɵpropertyInterpolate("href", project_r2.link, ɵɵsanitizeUrl);
+    ɵɵadvance(6);
     ɵɵtextInterpolate1("", project_r2.description, " ");
     ɵɵadvance(2);
     ɵɵrepeater(project_r2.technologies);
@@ -34186,14 +34236,37 @@ var ProjectsComponent = class _ProjectsComponent {
     features: [ɵɵStandaloneFeature],
     decls: 5,
     vars: 0,
-    consts: [[1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "text-xl", "font-medium"], [1, "flex", "gap-4"], ["target", "_blank", 1, "hover:underline", "flex", "items-center", "gap-1", "py-1", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "fill", "currentColor", "viewBox", "0 0 16 16", 1, "inline", "size-5"], ["d", "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"], ["xmlns", "http://www.w3.org/2000/svg", "fill", "none", "viewBox", "0 0 24 24", "stroke-width", "1.5", "stroke", "currentColor", 1, "size-6"], ["stroke-linecap", "round", "stroke-linejoin", "round", "d", "M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"], [1, "text-sm"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]],
+    consts: () => {
+      let i18n_0;
+      if (false) {
+        const MSG_EXTERNAL_1872099000671699527$$SRC_APP_PROJECTS_PROJECTS_COMPONENT_TS_0 = goog.getMsg("Proyectos");
+        i18n_0 = MSG_EXTERNAL_1872099000671699527$$SRC_APP_PROJECTS_PROJECTS_COMPONENT_TS_0;
+      } else {
+        i18n_0 = "Projets";
+      }
+      let i18n_1;
+      if (false) {
+        const MSG_EXTERNAL_3440114053637308580$$SRC_APP_PROJECTS_PROJECTS_COMPONENT_TS_1 = goog.getMsg("C\xF3digo fuente");
+        i18n_1 = MSG_EXTERNAL_3440114053637308580$$SRC_APP_PROJECTS_PROJECTS_COMPONENT_TS_1;
+      } else {
+        i18n_1 = "Code source";
+      }
+      let i18n_2;
+      if (false) {
+        const MSG_EXTERNAL_6820570898064157741$$SRC_APP_PROJECTS_PROJECTS_COMPONENT_TS_2 = goog.getMsg("Ver proyecto");
+        i18n_2 = MSG_EXTERNAL_6820570898064157741$$SRC_APP_PROJECTS_PROJECTS_COMPONENT_TS_2;
+      } else {
+        i18n_2 = "Voir le projet";
+      }
+      return [i18n_0, i18n_1, i18n_2, [1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "text-xl", "font-medium"], [1, "flex", "gap-4"], ["target", "_blank", 1, "hover:underline", "flex", "items-center", "gap-1", "py-1", 3, "href"], ["xmlns", "http://www.w3.org/2000/svg", "width", "16", "height", "16", "fill", "currentColor", "viewBox", "0 0 16 16", 1, "inline", "size-5"], ["d", "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"], ["xmlns", "http://www.w3.org/2000/svg", "fill", "none", "viewBox", "0 0 24 24", "stroke-width", "1.5", "stroke", "currentColor", 1, "size-6"], ["stroke-linecap", "round", "stroke-linejoin", "round", "d", "M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418"], [1, "text-sm"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]];
+    },
     template: function ProjectsComponent_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "h2", 0);
-        ɵɵtext(1, "Proyectos");
+        ɵɵelementStart(0, "h2", 3);
+        ɵɵi18n(1, 0);
         ɵɵelementEnd();
-        ɵɵelementStart(2, "div", 1);
-        ɵɵrepeaterCreate(3, ProjectsComponent_For_4_Template, 18, 4, "div", 2, _forTrack03);
+        ɵɵelementStart(2, "div", 4);
+        ɵɵrepeaterCreate(3, ProjectsComponent_For_4_Template, 20, 4, "div", 5, _forTrack03);
         ɵɵelementEnd();
       }
       if (rf & 2) {
@@ -34284,7 +34357,7 @@ var technologies_default = technologies;
 var _forTrack04 = ($index, $item) => $item.id;
 function TechnologiesComponent_For_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelement(0, "img", 2);
+    ɵɵelement(0, "img", 3);
   }
   if (rf & 2) {
     const technology_r1 = ctx.$implicit;
@@ -34304,14 +34377,23 @@ var TechnologiesComponent = class _TechnologiesComponent {
     features: [ɵɵStandaloneFeature],
     decls: 5,
     vars: 0,
-    consts: [[1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-wrap", "gap-2"], [3, "src", "alt"]],
+    consts: () => {
+      let i18n_0;
+      if (false) {
+        const MSG_EXTERNAL_4546458009532801804$$SRC_APP_TECHNOLOGIES_TECHNOLOGIES_COMPONENT_TS_0 = goog.getMsg("Tecnolog\xEDas");
+        i18n_0 = MSG_EXTERNAL_4546458009532801804$$SRC_APP_TECHNOLOGIES_TECHNOLOGIES_COMPONENT_TS_0;
+      } else {
+        i18n_0 = "Technologies";
+      }
+      return [i18n_0, [1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-wrap", "gap-2"], [3, "src", "alt"]];
+    },
     template: function TechnologiesComponent_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "h2", 0);
-        ɵɵtext(1, "Tecnolog\xEDas");
+        ɵɵelementStart(0, "h2", 1);
+        ɵɵi18n(1, 0);
         ɵɵelementEnd();
-        ɵɵelementStart(2, "div", 1);
-        ɵɵrepeaterCreate(3, TechnologiesComponent_For_4_Template, 1, 2, "img", 2, _forTrack04);
+        ɵɵelementStart(2, "div", 2);
+        ɵɵrepeaterCreate(3, TechnologiesComponent_For_4_Template, 1, 2, "img", 3, _forTrack04);
         ɵɵelementEnd();
       }
       if (rf & 2) {
@@ -34477,5 +34559,5 @@ bootstrapApplication(AppComponent, appConfig).catch(err => console.error(err));
    * License: MIT
    *)
 */
-/**i18n:7ccc57f486f381bd77fc669c13490893b3c55141af268c9502f1b297a4b6c52a*/
+/**i18n:a333cef653996b8896445e4ffe03746fcc5caec726f9e7a4a4ac7d484f10b287*/
 //# sourceMappingURL=main.js.map
