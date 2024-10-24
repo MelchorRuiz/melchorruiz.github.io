@@ -69,6 +69,7 @@
                   "input": "public/es"
                 }
               ],
+              "outputPath": "docs/es",
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
@@ -81,6 +82,7 @@
                   "input": "public/fr"
                 }
               ],
+              "outputPath": "docs/fr",
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
