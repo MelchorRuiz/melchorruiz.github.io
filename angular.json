@@ -9,11 +9,19 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale": "es",
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "docs",
+            "aot": true,
+            "localize": true,
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -52,6 +60,9 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "fr": {
+              "localize": ["fr"]
             }
           },
           "defaultConfiguration": "production"
@@ -64,6 +75,9 @@
             },
             "development": {
               "buildTarget": "MelchorRuiz:build:development"
+            },
+            "fr": {
+              "buildTarget": "MelchorRuiz:build:fr"
             }
           },
           "defaultConfiguration": "development"
