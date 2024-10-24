@@ -6,7 +6,7 @@ import technologies from '../../data/technologies';
   standalone: true,
   imports: [],
   template: `
-    <h2 class="text-2xl font-semibold py-2">Tecnologías</h2>
+    <h2 class="text-2xl font-semibold py-2" i18n>Tecnologías</h2>
     <div class="flex flex-wrap gap-2">
       @for (technology of technologies; track technology.id) {
         <img src="{{ technology.image }}" alt="{{ technology.name }}" />

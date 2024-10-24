@@ -2,12 +2,60 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="es" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="2379082776169073909" datatype="html">
+        <source>Acerca de</source>
+        <target>À propos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.ts</context>
+          <context context-type="linenumber">8,9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8710714495247258961" datatype="html">
+        <source>Me apasiona la tecnología y la programación, y estoy constantemente actualizándome mediante cursos de informática.</source>
+        <target>Je suis passionné par la technologie et la programmation, et je me mets constamment à jour grâce à des cours d'informatique.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="431992726386453248" datatype="html">
+        <source>Actualmente me enfoco en el desarrollo fullstack por la versatilidad que ofrece, permitiéndome trabajar eficazmente al mismo tiempo en el frontend y el backend.</source>
+        <target>Actuellement, je me concentre sur le développement fullstack pour la polyvalence qu'il offre, me permettant de travailler efficacement à la fois sur le frontend et le backend.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.ts</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3261171532766225725" datatype="html">
+        <source>En mi tiempo libre, disfruto explorando nuevos proyectos y desafíos.</source>
+        <target>Pendant mon temps libre, j'aime explorer de nouveaux projets et défis.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/about/about.component.ts</context>
+          <context context-type="linenumber">11,13</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4784027571029382148" datatype="html">
         <source>Todos los derechos reservados.</source>
         <target>Tous droits réservés.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/app.component.ts</context>
           <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6247950905185402673" datatype="html">
+        <source>Educación</source>
+        <target>Éducation</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/education/education.component.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3839418929735297411" datatype="html">
+        <source>Experiencia</source>
+        <target>Expérience</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/experience/experience.component.ts</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1715206049042305289" datatype="html">
@@ -40,6 +88,38 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/hero/hero.component.ts</context>
           <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1872099000671699527" datatype="html">
+        <source>Proyectos</source>
+        <target>Projets</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.ts</context>
+          <context context-type="linenumber">9,10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3440114053637308580" datatype="html">
+        <source>Código fuente</source>
+        <target>Code source</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.ts</context>
+          <context context-type="linenumber">20,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6820570898064157741" datatype="html">
+        <source>Ver proyecto</source>
+        <target>Voir le projet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/projects/projects.component.ts</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4546458009532801804" datatype="html">
+        <source>Tecnologías</source>
+        <target>Technologies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/technologies/technologies.component.ts</context>
+          <context context-type="linenumber">9,10</context>
         </context-group>
       </trans-unit>
     </body>

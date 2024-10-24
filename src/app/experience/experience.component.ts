@@ -6,7 +6,7 @@ import jobs from '../../data/jobs';
   standalone: true,
   imports: [],
   template: `
-    <h2 class="text-2xl font-semibold py-2">Experiencia</h2>
+    <h2 class="text-2xl font-semibold py-2" i18n>Experiencia</h2>
     <div class="flex flex-col gap-2">
       @for (job of jobs; track job.id) {
         <div class="border-[1px] border-black rounded-lg p-4">

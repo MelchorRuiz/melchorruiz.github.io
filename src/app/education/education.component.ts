@@ -6,7 +6,7 @@ import schools from '../../data/schools';
   standalone: true,
   imports: [],
   template: `
-    <h2 class="text-2xl font-semibold py-2">Educación</h2>
+    <h2 class="text-2xl font-semibold py-2" i18n>Educación</h2>
     <div class="flex flex-col gap-2">
       @for (school of schools; track school.id) {
         <div class="border-[1px] border-black rounded-lg p-4">
