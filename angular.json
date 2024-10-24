@@ -61,8 +61,29 @@
               "extractLicenses": false,
               "sourceMap": true
             },
+            "es": {
+              "localize": ["es"],
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public/es"
+                }
+              ],
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            },
             "fr": {
-              "localize": ["fr"]
+              "localize": ["fr"],
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "public/fr"
+                }
+              ],
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -75,6 +96,9 @@
             },
             "development": {
               "buildTarget": "MelchorRuiz:build:development"
+            },
+            "es": {
+              "buildTarget": "MelchorRuiz:build:es"
             },
             "fr": {
               "buildTarget": "MelchorRuiz:build:fr"
