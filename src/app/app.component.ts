@@ -5,17 +5,19 @@ import { AboutComponent } from "./about/about.component";
 import { ExperienceComponent } from "./experience/experience.component";
 import { EducationComponent } from "./education/education.component";
 import { ProjectsComponent } from "./projects/projects.component";
+import { TechnologiesComponent } from "./technologies/technologies.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroComponent, AboutComponent, ExperienceComponent, EducationComponent, ProjectsComponent],
+  imports: [RouterOutlet, HeroComponent, AboutComponent, ExperienceComponent, EducationComponent, ProjectsComponent, TechnologiesComponent],
   template: `
     <header class="max-w-[650px] mx-auto pt-5 md:pt-20 px-4">
       <app-hero />
     </header>
     <main class="max-w-[650px] mx-auto pb-5 px-4">
       <app-about />
+      <app-technologies />
       <app-experience />
       <app-education />
       <app-projects />
