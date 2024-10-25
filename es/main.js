@@ -34234,14 +34234,42 @@ var projects_es = [{
   technologies: ["Astro", "TailwindCSS", "React", "Node.js", "Express", "MySQL"],
   github: "https://github.com/MelchorRuiz/foro_electromovilidad_2024",
   link: "https://foro-electromovilidad.igeco.mx/"
+}, {
+  id: 2,
+  name: "Sicefa",
+  description: "Sistema integral para la administraci\xF3n de m\xFAltiples farmacias pertenecientes a una misma empresa. Permite la gesti\xF3n centralizada de sucursales, pedidos, env\xEDos, ventas, empleados y clientes. Optimiza la log\xEDstica, mejora el control de inventarios y facilita la toma de decisiones estrat\xE9gicas empresariales.",
+  technologies: ["Javascript", "mysql", "java", "docker", "tomcat", "jakarta"],
+  github: "https://github.com/MelchorRuiz/Sicefa",
+  link: "https://sicefa.onrender.com/"
+}, {
+  id: 3,
+  name: "CashPlash_Pro",
+  description: "Soluci\xF3n integral dise\xF1ada para facilitar la administraci\xF3n de peque\xF1os y medianos negocios. Los usuarios pueden agregar nuevos m\xF3dulos al sistema a trav\xE9s de una interfaz dedicada, permitiendo la adaptaci\xF3n de la aplicaci\xF3n a las necesidades espec\xEDficas de cada negocio.",
+  technologies: ["javascript", "electron", "html5", "css3", "mongodb", "node.js"],
+  github: "https://github.com/MelchorRuiz/CashPlash_Pro",
+  link: "https://github.com/MelchorRuiz/CashPlash_Pro/releases/tag/v1.0.0"
 }];
 var projects_fr = [{
   id: 1,
-  name: "Forum \xC9lectromobilit\xE9 2024",
+  name: "Foro Electromovilidad 2024",
   description: "Ce projet pr\xE9sente une page d'atterrissage con\xE7ue pour le \xAB Foro Electromovilidad 2024 \xBB, une conf\xE9rence d\xE9di\xE9e \xE0 l'exploration des derni\xE8res tendances, innovations et d\xE9veloppements dans le domaine de l'\xE9lectromobilit\xE9.",
   technologies: ["Astro", "TailwindCSS", "React", "Node.js", "Express", "MySQL"],
   github: "https://github.com/MelchorRuiz/foro_electromovilidad_2024",
   link: "https://foro-electromovilidad.igeco.mx/"
+}, {
+  id: 2,
+  name: "Sicefa",
+  description: "Syst\xE8me int\xE9gr\xE9 pour la gestion de plusieurs pharmacies. Il permet la gestion centralis\xE9e des succursales, des commandes, des exp\xE9ditions, des ventes, des employ\xE9s et des clients. Il optimise la logistique, am\xE9liore le contr\xF4le des stocks et facilite la prise de d\xE9cisions strat\xE9giques au sein de l'entreprise.",
+  technologies: ["Javascript", "mysql", "java", "docker", "tomcat", "jakarta"],
+  github: "https://github.com/MelchorRuiz/Sicefa",
+  link: "https://sicefa.onrender.com/"
+}, {
+  id: 3,
+  name: "CashPlash_Pro",
+  description: "Soluci\xF3n int\xE9grale con\xE7ue pour faciliter la gestion des petites et moyennes entreprises. Les utilisateurs peuvent ajouter de nouveaux modules au syst\xE8me via une interface d\xE9di\xE9e, permettant ainsi d'adapter l'application aux besoins sp\xE9cifiques de chaque entreprise.",
+  technologies: ["javascript", "electron", "html5", "css3", "mongodb", "node.js"],
+  github: "https://github.com/MelchorRuiz/CashPlash_Pro",
+  link: "https://github.com/MelchorRuiz/CashPlash_Pro/releases/tag/v1.0.0"
 }];
 function getProjects(locale) {
   if (locale === "fr") {
