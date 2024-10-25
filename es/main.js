@@ -33927,7 +33927,7 @@ var AboutComponent = class _AboutComponent {
 })();
 
 // src/data/jobs.ts
-var jobs = [{
+var jobs_es = [{
   "id": 1,
   "title": "Desarrollador full stack",
   "logo": "igeco-mexico.webp",
@@ -33940,13 +33940,33 @@ var jobs = [{
   "description": "Form\xE9 parte del equipo de desarrollo web, donde colabor\xE9 a construir las diversas landing pages de los eventos que realiza la empresa, utilizando tecnolog\xEDas como Astro, React y Node, contribuyendo al \xE9xito de cada evento con interfaces eficientes y atractivas.",
   "skills": ["Node.js", "Astro", "JavaScript", "React.js", "Tailwind CSS", "Git"]
 }];
-var jobs_default = jobs;
+var jobs_fr = [{
+  "id": 1,
+  "title": "D\xE9veloppeur full stack",
+  "logo": "igeco-mexico.webp",
+  "employmentType": "Contrat de stage",
+  "company": "IGECO M\xE9xico",
+  "location": "Le\xF3n, Guanajuato, Mexique",
+  "locationType": "Pr\xE9sentiel",
+  "startDate": "Mai 2024",
+  "endDate": "Ao\xFBt 2024",
+  "description": "J'ai fait partie de l'\xE9quipe de d\xE9veloppement web, o\xF9 j'ai collabor\xE9 \xE0 la construction des diff\xE9rentes pages de destination des \xE9v\xE9nements organis\xE9s par l'entreprise, en utilisant des technologies telles que Astro, React et Node, contribuant au succ\xE8s de chaque \xE9v\xE9nement avec des interfaces efficaces et attrayantes.",
+  "skills": ["Node.js", "Astro", "JavaScript", "React.js", "Tailwind CSS", "Git"]
+}];
+function getJobs(locale) {
+  if (locale === "fr") {
+    return jobs_fr;
+  } else {
+    return jobs_es;
+  }
+}
+var jobs_default = getJobs;
 
 // src/app/experience/experience.component.ts
 var _forTrack0 = ($index, $item) => $item.id;
-function ExperienceComponent_For_4_For_16_Template(rf, ctx) {
+function ExperienceComponent_For_4_For_19_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "li", 9);
+    ɵɵelementStart(0, "li", 10);
     ɵɵtext(1);
     ɵɵelementEnd();
   }
@@ -33958,25 +33978,29 @@ function ExperienceComponent_For_4_For_16_Template(rf, ctx) {
 }
 function ExperienceComponent_For_4_Template(rf, ctx) {
   if (rf & 1) {
-    ɵɵelementStart(0, "div", 3)(1, "div", 4);
-    ɵɵelement(2, "img", 5);
-    ɵɵelementStart(3, "div")(4, "h5", 6);
+    ɵɵelementStart(0, "div", 4)(1, "div", 5);
+    ɵɵelement(2, "img", 6);
+    ɵɵelementStart(3, "div")(4, "h5", 7);
     ɵɵtext(5);
     ɵɵelementEnd();
     ɵɵelementStart(6, "p");
     ɵɵtext(7);
+    ɵɵelementStart(8, "span");
+    ɵɵi18n(9, 1);
     ɵɵelementEnd();
-    ɵɵelementStart(8, "p");
-    ɵɵtext(9);
+    ɵɵtext(10);
     ɵɵelementEnd();
-    ɵɵelementStart(10, "p");
-    ɵɵtext(11);
+    ɵɵelementStart(11, "p");
+    ɵɵtext(12);
     ɵɵelementEnd();
-    ɵɵelementStart(12, "p", 7);
-    ɵɵtext(13);
+    ɵɵelementStart(13, "p");
+    ɵɵtext(14);
+    ɵɵelementEnd();
+    ɵɵelementStart(15, "p", 8);
+    ɵɵtext(16);
     ɵɵelementEnd()()();
-    ɵɵelementStart(14, "ul", 8);
-    ɵɵrepeaterCreate(15, ExperienceComponent_For_4_For_16_Template, 2, 1, "li", 9, ɵɵrepeaterTrackByIdentity);
+    ɵɵelementStart(17, "ul", 9);
+    ɵɵrepeaterCreate(18, ExperienceComponent_For_4_For_19_Template, 2, 1, "li", 10, ɵɵrepeaterTrackByIdentity);
     ɵɵelementEnd()();
   }
   if (rf & 2) {
@@ -33986,7 +34010,9 @@ function ExperienceComponent_For_4_Template(rf, ctx) {
     ɵɵadvance(3);
     ɵɵtextInterpolate(job_r2.title);
     ɵɵadvance(2);
-    ɵɵtextInterpolate2("", job_r2.employmentType, " en ", job_r2.company, "");
+    ɵɵtextInterpolate1("", job_r2.employmentType, " ");
+    ɵɵadvance(3);
+    ɵɵtextInterpolate1(" ", job_r2.company, "");
     ɵɵadvance(2);
     ɵɵtextInterpolate2("", job_r2.startDate, " - ", job_r2.endDate, "");
     ɵɵadvance(2);
@@ -33998,9 +34024,16 @@ function ExperienceComponent_For_4_Template(rf, ctx) {
   }
 }
 var ExperienceComponent = class _ExperienceComponent {
-  jobs = jobs_default;
+  locale;
+  jobs = jobs_default("es");
+  constructor(locale) {
+    this.locale = locale;
+  }
+  ngOnInit() {
+    this.jobs = jobs_default(this.locale);
+  }
   static ɵfac = function ExperienceComponent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ExperienceComponent)();
+    return new (__ngFactoryType__ || _ExperienceComponent)(ɵɵdirectiveInject(LOCALE_ID));
   };
   static ɵcmp = /* @__PURE__ */ɵɵdefineComponent({
     type: _ExperienceComponent,
@@ -34017,15 +34050,22 @@ var ExperienceComponent = class _ExperienceComponent {
       } else {
         i18n_0 = "Experiencia";
       }
-      return [i18n_0, [1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "flex", "gap-4"], ["alt", "", 1, "size-20", "rounded-full", 3, "src"], [1, "text-xl", "font-medium"], [1, "text-sm"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]];
+      let i18n_1;
+      if (false) {
+        const MSG_EXTERNAL_7618870723010461457$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_1 = goog.getMsg("en");
+        i18n_1 = MSG_EXTERNAL_7618870723010461457$$SRC_APP_EXPERIENCE_EXPERIENCE_COMPONENT_TS_1;
+      } else {
+        i18n_1 = "en";
+      }
+      return [i18n_0, i18n_1, [1, "text-2xl", "font-semibold", "py-2"], [1, "flex", "flex-col", "gap-2"], [1, "border-[1px]", "border-black", "rounded-lg", "p-4"], [1, "flex", "gap-4"], ["alt", "", 1, "size-20", "rounded-full", 3, "src"], [1, "text-xl", "font-medium"], [1, "text-sm"], [1, "flex", "flex-wrap", "gap-2", "pt-4"], [1, "border-[1px]", "border-black", "py-1", "px-2", "hover:bg-black", "hover:text-white"]];
     },
     template: function ExperienceComponent_Template(rf, ctx) {
       if (rf & 1) {
-        ɵɵelementStart(0, "h2", 1);
+        ɵɵelementStart(0, "h2", 2);
         ɵɵi18n(1, 0);
         ɵɵelementEnd();
-        ɵɵelementStart(2, "div", 2);
-        ɵɵrepeaterCreate(3, ExperienceComponent_For_4_Template, 17, 9, "div", 3, _forTrack0);
+        ɵɵelementStart(2, "div", 3);
+        ɵɵrepeaterCreate(3, ExperienceComponent_For_4_Template, 20, 9, "div", 4, _forTrack0);
         ɵɵelementEnd();
       }
       if (rf & 2) {
@@ -34045,7 +34085,7 @@ var ExperienceComponent = class _ExperienceComponent {
 })();
 
 // src/data/schools.ts
-var schools = [{
+var schools_es = [{
   "id": 1,
   "name": "IUT d'Orl\xE9ans",
   "logo": "iut-orleans.webp",
@@ -34062,7 +34102,31 @@ var schools = [{
   "endDate": "Agosto 2024",
   "skills": ["Programaci\xF3n orientada a objetos (POO)", "Java", "MySQL", "Desarrollo frontend", "Networking"]
 }];
-var schools_default = schools;
+var schools_fr = [{
+  "id": 1,
+  "name": "IUT d'Orl\xE9ans",
+  "logo": "iut-orleans.webp",
+  "degree": "BUT 3 Informatique - D\xE9veloppement d'applications",
+  "startDate": "Septembre 2024",
+  "endDate": "Pr\xE9sent",
+  "skills": ["D\xE9veloppement web backend", "Python", "Django", "R\xE9seaux de neurones", "Base de donn\xE9es orient\xE9e graphe"]
+}, {
+  "id": 2,
+  "name": "Universidad Tecnol\xF3gica de Le\xF3n",
+  "logo": "utleon.webp",
+  "degree": "TSU en D\xE9veloppement de logiciels multiplateforme",
+  "startDate": "Septembre 2022",
+  "endDate": "Ao\xFBt 2024",
+  "skills": ["Programmation orient\xE9e objet (POO)", "Java", "MySQL", "D\xE9veloppement frontend", "Networking"]
+}];
+function getSchools(locale) {
+  if (locale === "fr") {
+    return schools_fr;
+  } else {
+    return schools_es;
+  }
+}
+var schools_default = getSchools;
 
 // src/app/education/education.component.ts
 var _forTrack02 = ($index, $item) => $item.id;
@@ -34110,9 +34174,16 @@ function EducationComponent_For_4_Template(rf, ctx) {
   }
 }
 var EducationComponent = class _EducationComponent {
-  schools = schools_default;
+  locale;
+  schools = schools_default("es");
+  constructor(locale) {
+    this.locale = locale;
+  }
+  ngOnInit() {
+    this.schools = schools_default(this.locale);
+  }
   static ɵfac = function EducationComponent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _EducationComponent)();
+    return new (__ngFactoryType__ || _EducationComponent)(ɵɵdirectiveInject(LOCALE_ID));
   };
   static ɵcmp = /* @__PURE__ */ɵɵdefineComponent({
     type: _EducationComponent,
@@ -34156,7 +34227,7 @@ var EducationComponent = class _EducationComponent {
 })();
 
 // src/data/projects.ts
-var projects = [{
+var projects_es = [{
   id: 1,
   name: "Foro Electromovilidad 2024",
   description: "Este proyecto presenta una Landing Page dise\xF1ada para el \xABForo Electromovilidad 2024\xBB, una conferencia dedicada a explorar las \xFAltimas tendencias, innovaciones y desarrollos en electromovilidad.",
@@ -34164,7 +34235,22 @@ var projects = [{
   github: "https://github.com/MelchorRuiz/foro_electromovilidad_2024",
   link: "https://foro-electromovilidad.igeco.mx/"
 }];
-var projects_default = projects;
+var projects_fr = [{
+  id: 1,
+  name: "Forum \xC9lectromobilit\xE9 2024",
+  description: "Ce projet pr\xE9sente une page d'atterrissage con\xE7ue pour le \xAB Foro Electromovilidad 2024 \xBB, une conf\xE9rence d\xE9di\xE9e \xE0 l'exploration des derni\xE8res tendances, innovations et d\xE9veloppements dans le domaine de l'\xE9lectromobilit\xE9.",
+  technologies: ["Astro", "TailwindCSS", "React", "Node.js", "Express", "MySQL"],
+  github: "https://github.com/MelchorRuiz/foro_electromovilidad_2024",
+  link: "https://foro-electromovilidad.igeco.mx/"
+}];
+function getProjects(locale) {
+  if (locale === "fr") {
+    return projects_fr;
+  } else {
+    return projects_es;
+  }
+}
+var projects_default = getProjects;
 
 // src/app/projects/projects.component.ts
 var _forTrack03 = ($index, $item) => $item.id;
@@ -34225,9 +34311,16 @@ function ProjectsComponent_For_4_Template(rf, ctx) {
   }
 }
 var ProjectsComponent = class _ProjectsComponent {
-  projects = projects_default;
+  locale;
+  projects = projects_default("es");
+  constructor(locale) {
+    this.locale = locale;
+  }
+  ngOnInit() {
+    this.projects = projects_default(this.locale);
+  }
   static ɵfac = function ProjectsComponent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _ProjectsComponent)();
+    return new (__ngFactoryType__ || _ProjectsComponent)(ɵɵdirectiveInject(LOCALE_ID));
   };
   static ɵcmp = /* @__PURE__ */ɵɵdefineComponent({
     type: _ProjectsComponent,
@@ -34497,8 +34590,9 @@ function LocaleSelectorComponent_Conditional_3_Template(rf, ctx) {
   }
 }
 var LocaleSelectorComponent = class _LocaleSelectorComponent {
-  getCurrentLocale() {
-    return window.location.pathname.split("/")[1];
+  locale;
+  constructor(locale) {
+    this.locale = locale;
   }
   displayLocales() {
     const options = document.getElementById("options");
@@ -34508,7 +34602,7 @@ var LocaleSelectorComponent = class _LocaleSelectorComponent {
     window.location.href = `/${locale}`;
   }
   static ɵfac = function LocaleSelectorComponent_Factory(__ngFactoryType__) {
-    return new (__ngFactoryType__ || _LocaleSelectorComponent)();
+    return new (__ngFactoryType__ || _LocaleSelectorComponent)(ɵɵdirectiveInject(LOCALE_ID));
   };
   static ɵcmp = /* @__PURE__ */ɵɵdefineComponent({
     type: _LocaleSelectorComponent,
@@ -34549,7 +34643,7 @@ var LocaleSelectorComponent = class _LocaleSelectorComponent {
       }
       if (rf & 2) {
         ɵɵadvance(2);
-        ɵɵconditional(ctx.getCurrentLocale() === "fr" ? 2 : 3);
+        ɵɵconditional(ctx.locale === "fr" ? 2 : 3);
       }
     },
     dependencies: [MxComponent, FrComponent],
