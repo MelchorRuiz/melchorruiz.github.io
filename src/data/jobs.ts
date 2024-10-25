@@ -12,7 +12,7 @@ type Job = {
   skills: string[];
 }
 
-const jobs: Job[] = [
+const jobs_es: Job[] = [
   {
     "id": 1,
     "title": "Desarrollador full stack",
@@ -28,4 +28,28 @@ const jobs: Job[] = [
   },
 ]
 
-export default jobs;
+const jobs_fr: Job[] = [
+  {
+    "id": 1,
+    "title": "Développeur full stack",
+    "logo": "igeco-mexico.webp",
+    "employmentType": "Contrat de stage",
+    "company": "IGECO México",
+    "location": "León, Guanajuato, Mexique",
+    "locationType": "Présentiel",
+    "startDate": "Mai 2024",
+    "endDate": "Août 2024",
+    "description": "J'ai fait partie de l'équipe de développement web, où j'ai collaboré à la construction des différentes pages de destination des événements organisés par l'entreprise, en utilisant des technologies telles que Astro, React et Node, contribuant au succès de chaque événement avec des interfaces efficaces et attrayantes.",
+    "skills": ["Node.js", "Astro", "JavaScript", "React.js", "Tailwind CSS", "Git"]
+  },
+]
+
+function getJobs(locale: string): Job[] {
+  if (locale === "fr") {
+    return jobs_fr;
+  } else {
+    return jobs_es;
+  }
+}
+
+export default getJobs;

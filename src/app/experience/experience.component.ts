@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import jobs from '../../data/jobs';
+import { Component, Inject, LOCALE_ID } from '@angular/core';
+import getJobs from '../../data/jobs';
 
 @Component({
   selector: 'app-experience',
@@ -14,7 +14,7 @@ import jobs from '../../data/jobs';
             <img class="size-20 rounded-full" src="{{ job.logo }}" alt="">
             <div>
               <h5 class="text-xl font-medium">{{ job.title }}</h5>
-              <p>{{ job.employmentType }} en {{ job.company }}</p>
+              <p>{{ job.employmentType }} <span i18n>en</span> {{ job.company }}</p>
               <p>{{ job.startDate }} - {{ job.endDate }}</p>
               <p>{{ job.location }} ({{ job.locationType }})</p>
               <p class="text-sm">{{ job.description }}</p>
@@ -31,5 +31,10 @@ import jobs from '../../data/jobs';
   `
 })
 export class ExperienceComponent {
-  jobs = jobs;
+  jobs = getJobs("es");
+  
+  constructor(@Inject(LOCALE_ID) private locale: string) {}
+  ngOnInit(){
+    this.jobs = getJobs(this.locale);
+  }
 }
