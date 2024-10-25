@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["angular:styles/component:css;1cc54be817ece88d31a589117ddb93ea413b7fd2ead33be22cae4b25b3fe82a3;/home/runner/work/melchorruiz.github.io/melchorruiz.github.io/src/app/locale-selector/locale-selector.component.ts"],
+  "sourcesContent": ["\n    #options {\n      display: none;\n    }\n    #options.show {\n      display: flex;\n      animation: expand 0.5s;\n    }\n\n    @keyframes expand {\n      from {\n        transform: translateY(-10px);\n      }\n      to {\n        transform: translateY(0);\n      }\n    }\n  "],
+  "mappings": ";AACI,CAAC;AACC,WAAS;AACX;AACA,CAHC,OAGO,CAAC;AACP,WAAS;AACT,aAAW,OAAO;AACpB;AAEA,WAHa;AAIX;AACE,eAAW,WAAW;AACxB;AACA;AACE,eAAW,WAAW;AACxB;AACF;",
+  "names": []
+}
