@@ -70,7 +70,7 @@
                 }
               ],
               "outputPath": "docs/es",
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
               "sourceMap": true
             },
@@ -83,7 +83,7 @@
                 }
               ],
               "outputPath": "docs/fr",
-              "optimization": false,
+              "optimization": true,
               "extractLicenses": false,
               "sourceMap": true
             }
