@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
           <a href="https://www.linkedin.com/in/melchor-ruiz-gonzalez/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin badge"></a>
           <a href="https://www.instagram.com/melchor.ru.go/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="instagram badge"></a>
           <a href="https://api.whatsapp.com/send?phone=33782549655" target="_blank"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="whatsapp badge"></a>
-          <a href="mailto:ruizgonzalezmelchor3@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail badge"></a>
+          <a href="mailto:me@melchor-ruiz.fr" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="gmail badge"></a>
         </div>
         <a href="cv.pdf" target="_blank" class="px-3 py-1 my-1 bg-black text-white flex w-fit font-semibold">
           <span i18n>Currículum</span>
