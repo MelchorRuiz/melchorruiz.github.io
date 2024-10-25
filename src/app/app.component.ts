@@ -6,14 +6,16 @@ import { ExperienceComponent } from "./experience/experience.component";
 import { EducationComponent } from "./education/education.component";
 import { ProjectsComponent } from "./projects/projects.component";
 import { TechnologiesComponent } from "./technologies/technologies.component";
+import { LocaleSelectorComponent } from "./locale-selector/locale-selector.component"
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeroComponent, AboutComponent, ExperienceComponent, EducationComponent, ProjectsComponent, TechnologiesComponent],
+  imports: [RouterOutlet, HeroComponent, AboutComponent, ExperienceComponent, EducationComponent, ProjectsComponent, TechnologiesComponent, LocaleSelectorComponent],
   template: `
     <header class="max-w-[650px] mx-auto pt-5 md:pt-20 px-4">
       <app-hero />
+      <app-locale-selector />
     </header>
     <main class="max-w-[650px] mx-auto pb-5 px-4">
       <app-about />
