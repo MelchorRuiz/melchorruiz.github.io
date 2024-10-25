@@ -27,8 +27,8 @@ jobs:
       - name: Create CNAME file
         run: echo "melchor-ruiz.fr" > dist/CNAME
 
-      - name: Copy redirect page
-        run: cp src/redirect/index.html dist/index.html
+      - name: Copy static files
+        run: cp src/static/* dist/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
