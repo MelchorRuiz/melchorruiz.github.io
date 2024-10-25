@@ -8,7 +8,7 @@ type school = {
   skills: string[];
 }
 
-const schools: school[] = [
+const schools_es: school[] = [
   {
     "id": 1,
     "name": "IUT d'Orléans",
@@ -29,4 +29,33 @@ const schools: school[] = [
   }
 ]
 
-export default schools;
+const schools_fr: school[] = [
+  {
+    "id": 1,
+    "name": "IUT d'Orléans",
+    "logo": "iut-orleans.webp",
+    "degree": "BUT 3 Informatique - Développement d'applications",
+    "startDate": "Septembre 2024",
+    "endDate": "Présent",
+    "skills": ["Développement web backend", "Python", "Django", "Réseaux de neurones", "Base de données orientée graphe"]
+  },
+  {
+    "id": 2,
+    "name": "Universidad Tecnológica de León",
+    "logo": "utleon.webp",
+    "degree": "TSU en Développement de logiciels multiplateforme",
+    "startDate": "Septembre 2022",
+    "endDate": "Août 2024",
+    "skills": ["Programmation orientée objet (POO)", "Java", "MySQL", "Développement frontend", "Networking"]
+  }
+]
+
+function getSchools(locale: string): school[] {
+  if (locale === "fr") {
+    return schools_fr;
+  } else {
+    return schools_es;
+  }
+}
+
+export default getSchools;

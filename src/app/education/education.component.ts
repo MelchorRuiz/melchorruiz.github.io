@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import schools from '../../data/schools';
+import { Component, Inject, LOCALE_ID } from '@angular/core';
+import getSchools from '../../data/schools';
 
 @Component({
   selector: 'app-education',
@@ -30,5 +30,10 @@ import schools from '../../data/schools';
   styles: ``
 })
 export class EducationComponent {
-  schools = schools;
+  schools = getSchools("es");
+
+  constructor(@Inject(LOCALE_ID) private locale: string) {}
+  ngOnInit(){
+    this.schools = getSchools(this.locale);
+  }
 }
