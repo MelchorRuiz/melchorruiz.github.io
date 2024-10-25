@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Inject, LOCALE_ID } from '@angular/core';
 import { MxComponent } from '../flags/mx.component';
 import { FrComponent } from '../flags/fr.component';
 
@@ -9,7 +9,7 @@ import { FrComponent } from '../flags/fr.component';
   template: `
     <div class="fixed top-5 right-5 cursor-pointer flex flex-col gap-2 ring-1 ring-black rounded-md bg-white/70">
       <div class="flex items-center gap-2 p-2 pb-1" (click)="displayLocales()">
-        @if (getCurrentLocale() === 'fr'){
+        @if (this.locale === 'fr'){
           <app-fr />
           <span class="hidden md:block">Français</span>
         } @else {
@@ -53,9 +53,7 @@ import { FrComponent } from '../flags/fr.component';
 })
 export class LocaleSelectorComponent {
 
-  getCurrentLocale() {
-    return window.location.pathname.split('/')[1];
-  }
+  constructor(@Inject(LOCALE_ID) public locale: string) {}
   
   displayLocales() {
     const options = document.getElementById('options') as HTMLElement;
