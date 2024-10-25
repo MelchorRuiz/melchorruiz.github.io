@@ -7,7 +7,7 @@ type project = {
   link: string;
 }
 
-const projects: project[] = [
+const projects_es: project[] = [
   {
     id: 1,
     name: 'Foro Electromovilidad 2024',
@@ -18,4 +18,23 @@ const projects: project[] = [
   },
 ]
 
-export default projects;
+const projects_fr: project[] = [
+  {
+    id: 1,
+    name: 'Forum Électromobilité 2024',
+    description: 'Ce projet présente une page d\'atterrissage conçue pour le « Foro Electromovilidad 2024 », une conférence dédiée à l\'exploration des dernières tendances, innovations et développements dans le domaine de l\'électromobilité.',
+    technologies: ['Astro', 'TailwindCSS', 'React', 'Node.js', 'Express', 'MySQL'],
+    github: 'https://github.com/MelchorRuiz/foro_electromovilidad_2024',
+    link: 'https://foro-electromovilidad.igeco.mx/'
+  },
+]
+
+function getProjects(locale: string): project[] {
+  if (locale === "fr") {
+    return projects_fr;
+  } else {
+    return projects_es;
+  }
+}
+
+export default getProjects;

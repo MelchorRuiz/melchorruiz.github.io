@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import projects from '../../data/projects';
+import { Component, Inject, LOCALE_ID } from '@angular/core';
+import getProjects from '../../data/projects';
 
 @Component({
   selector: 'app-projects',
@@ -39,5 +39,10 @@ import projects from '../../data/projects';
   `
 })
 export class ProjectsComponent {
-  projects = projects;
+  projects = getProjects("es");
+
+  constructor(@Inject(LOCALE_ID) private locale: string) {}
+  ngOnInit(){
+    this.projects = getProjects(this.locale);
+  }
 }
