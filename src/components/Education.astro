@@ -1,0 +1,31 @@
+---
+import getSchools from '../data/schools.js'
+import { getI18N } from "../i18n"
+const schools = getSchools(Astro.currentLocale)
+const { education } = getI18N(Astro.currentLocale)
+---
+
+<h2 class="text-2xl font-semibold py-2">{ education }</h2>
+<div class="flex flex-col gap-2">
+  {
+    schools.map(school => (
+    <div class="border-[1px] border-black rounded-lg p-4">
+      <div class="flex gap-4">
+        <img class="size-20 rounded-full" src={ school.logo } alt="">
+        <div>
+          <h5 class="text-xl font-medium">{ school.name }</h5>
+          <p>{ school.degree } </p>
+          <p>{ school.startDate } - { school.endDate }</p>
+        </div>
+      </div>
+      <ul class="flex flex-wrap gap-2 pt-4">
+        {
+          school.skills.map(skill => (
+            <li class="border-[1px] border-black py-1 px-2 hover:bg-black hover:text-white">{ skill }</li>
+          ))
+        }
+      </ul>
+    </div>
+    ))
+  }
+</div>

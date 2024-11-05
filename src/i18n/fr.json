@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Bonjour, je m'appelle Melchor RUIZ",
+    "description": "Développeur de logiciels",
+    "location": "Orléans, Centre-Val de Loire, France",
+    "cv": "Curriculum"
+  },
+  "about": {
+    "title": "À propos",
+    "description": [
+      "Je suis passionné par la technologie et la programmation, et je me mets constamment à jour grâce à des cours d'informatique.",
+      "Actuellement, je me concentre sur le développement fullstack pour la polyvalence qu'il offre, me permettant de travailler efficacement à la fois sur le frontend et le backend.",
+      "Pendant mon temps libre, j'aime explorer de nouveaux projets et défis."
+    ]
+  },
+  "education": "Éducation",
+  "experience": {
+    "title": "Expérience",
+    "in": "chez"
+  } ,
+  "projects": {
+    "title": "Projets",
+    "code": "Code source",
+    "see": "Voir le projet"
+  },
+  "technologies": "Technologies",
+  "copyrigth": "Tous droits réservés."
+}

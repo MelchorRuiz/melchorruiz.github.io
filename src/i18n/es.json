@@ -1,0 +1,28 @@
+{
+  "hero": {
+    "title": "Hola, Soy Melchor Ruiz",
+    "description": "Desarrollador de software",
+    "location": "Orleans, Centro-Valle del Loira, Francia",
+    "cv": "Currículum"
+  },
+  "about": {
+    "title": "Acerca de",
+    "description": [
+      "Me apasiona la tecnología y la programación, y estoy constantemente actualizándome mediante cursos de informática.",
+      "Actualmente me enfoco en el desarrollo fullstack por la versatilidad que ofrece, permitiéndome trabajar eficazmente al mismo tiempo en el frontend y el backend.",
+      "En mi tiempo libre, disfruto explorando nuevos proyectos y desafíos."
+    ]
+  },
+  "education": "Educación",
+  "experience": {
+    "title": "Experiencia",
+    "in": "en"
+  } ,
+  "projects": {
+    "title": "Proyectos",
+    "code": "Código fuente",
+    "see": "Ver Proyecto"
+  },
+  "technologies": "Tecnologías",
+  "copyrigth": "Todos los derechos reservados."
+}

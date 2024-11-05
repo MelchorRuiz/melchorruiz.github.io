@@ -1,0 +1,14 @@
+---
+import technologies from '../data/technologies.js'
+import { getI18N } from "../i18n"
+const { technologies: title } = getI18N(Astro.currentLocale);
+---
+
+<h2 class="text-2xl font-semibold py-2">{ title }</h2>
+<div class="flex flex-wrap gap-2">
+  {
+    technologies.map(technology => (
+      <img src={ technology.image } alt={ technology.name } />
+    ))
+  }
+</div>
