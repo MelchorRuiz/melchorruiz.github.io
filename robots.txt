@@ -1,6 +1,3 @@
 User-agent: *
-Disallow: /
-Allow: /es
-Allow: /fr
-
-Sitemap: https://melchor-ruiz.fr/sitemap.xml
+Allow: /
+Sitemap: https://melchor-ruiz.fr/sitemap-index.xml
