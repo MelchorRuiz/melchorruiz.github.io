@@ -61,9 +61,11 @@ import Fr from "./flags/Fr.astro"
   const btnFrench = languageOptions.children[1] as HTMLElement;
 
   btnSpanish.addEventListener('click', () => {
+    localStorage.setItem('preferredLocale', 'es');
     window.location.href = `/`;
   });
   btnFrench.addEventListener('click', () => {
+    localStorage.setItem('preferredLocale', 'fr');
     window.location.href = `/fr`;
   });
 </script>

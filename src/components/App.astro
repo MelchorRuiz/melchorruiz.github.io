@@ -28,3 +28,16 @@ const { copyrigth } = getI18N(Astro.currentLocale);
 		<p>&copy; 2024 Melchor Ruiz. { copyrigth }</p>
 	</footer>
 </Layout>
+<script>
+	let preferredLocale = localStorage.getItem('preferredLocale')
+	if (!preferredLocale){
+		preferredLocale = ['fr'].includes(navigator.language) ? navigator.language : 'es'
+		localStorage.setItem('preferredLocale', preferredLocale)
+	}
+	const currentPath = window.location.pathname
+	if (preferredLocale === 'es' && currentPath !== '/'){
+		window.location.href = '/';
+	} else if (preferredLocale === 'fr' && currentPath !== '/fr'){
+		window.location.href = '/fr';
+	}
+</script>
