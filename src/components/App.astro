@@ -37,7 +37,7 @@ const { copyrigth } = getI18N(Astro.currentLocale);
 	const currentPath = window.location.pathname
 	if (preferredLocale === 'es' && currentPath !== '/'){
 		window.location.href = '/';
-	} else if (preferredLocale === 'fr' && currentPath !== '/fr'){
+	} else if (preferredLocale === 'fr' && !['/fr', '/fr/'].includes(currentPath)){
 		window.location.href = '/fr';
 	}
 </script>
