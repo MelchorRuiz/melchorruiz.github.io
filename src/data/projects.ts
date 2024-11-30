@@ -20,7 +20,7 @@ const projects_es: project[] = [
     id: 2,
     name: 'Sicefa',
     description: 'Sistema integral para la administración de múltiples farmacias pertenecientes a una misma empresa. Permite la gestión centralizada de sucursales, pedidos, envíos, ventas, empleados y clientes. Optimiza la logística, mejora el control de inventarios y facilita la toma de decisiones estratégicas empresariales.',
-    technologies: ['Javascript', 'mysql', 'java', 'docker', 'tomcat', 'jakarta'],
+    technologies: ['Java', 'Mysql', 'Docker', 'Tomcat', 'Jakarta', 'Javascript'],
     github: 'https://github.com/MelchorRuiz/Sicefa',
     link: 'https://sicefa.onrender.com/'
   },
@@ -28,7 +28,7 @@ const projects_es: project[] = [
     id: 3,
     name: 'CashPlash_Pro',
     description: 'Solución integral diseñada para facilitar la administración de pequeños y medianos negocios. Los usuarios pueden agregar nuevos módulos al sistema a través de una interfaz dedicada, permitiendo la adaptación de la aplicación a las necesidades específicas de cada negocio.',
-    technologies: ['javascript', 'electron', 'html5', 'css3', 'mongodb', 'node.js'],
+    technologies: ['Javascript', 'Electron', 'Html5', 'Css3', 'Mongodb', 'Node.js'],
     github: 'https://github.com/MelchorRuiz/CashPlash_Pro',
     link: 'https://github.com/MelchorRuiz/CashPlash_Pro/releases/tag/v1.0.0'
   },
@@ -47,7 +47,7 @@ const projects_fr: project[] = [
     id: 2,
     name: 'Sicefa',
     description: 'Système intégré pour la gestion de plusieurs pharmacies. Il permet la gestion centralisée des succursales, des commandes, des expéditions, des ventes, des employés et des clients. Il optimise la logistique, améliore le contrôle des stocks et facilite la prise de décisions stratégiques au sein de l\'entreprise.',
-    technologies: ['Javascript', 'mysql', 'java', 'docker', 'tomcat', 'jakarta'],
+    technologies: ['Java', 'Mysql', 'Docker', 'Tomcat', 'Jakarta', 'Javascript'],
     github: 'https://github.com/MelchorRuiz/Sicefa',
     link: 'https://sicefa.onrender.com/'
   },
@@ -55,7 +55,7 @@ const projects_fr: project[] = [
     id: 3,
     name: 'CashPlash_Pro',
     description: 'Solución intégrale conçue pour faciliter la gestion des petites et moyennes entreprises. Les utilisateurs peuvent ajouter de nouveaux modules au système via une interface dédiée, permettant ainsi d\'adapter l\'application aux besoins spécifiques de chaque entreprise.',
-    technologies: ['javascript', 'electron', 'html5', 'css3', 'mongodb', 'node.js'],
+    technologies: ['Javascript', 'Electron', 'Html5', 'Css3', 'Mongodb', 'Node.js'],
     github: 'https://github.com/MelchorRuiz/CashPlash_Pro',
     link: 'https://github.com/MelchorRuiz/CashPlash_Pro/releases/tag/v1.0.0'
   },
