@@ -1,5 +1,4 @@
 type school = {
-  id: number;
   name: string;
   logo: string;
   degree: string;
@@ -10,7 +9,6 @@ type school = {
 
 const schools_es: school[] = [
   {
-    "id": 1,
     "name": "IUT d'Orléans",
     "logo": "iut-orleans.webp",
     "degree": "BUT 3 Informatica - Realización de aplicaciones",
@@ -19,7 +17,6 @@ const schools_es: school[] = [
     "skills": ["Desarrollo web backend", "Python", "Django", "Redes neuronales", "Base de datos orientada a grafos"]
   },
   {
-    "id": 2,
     "name": "Universidad Tecnológica de León",
     "logo": "utleon.webp",
     "degree": "TSU en Desarrollo de Software Multiplataforma",
@@ -31,7 +28,6 @@ const schools_es: school[] = [
 
 const schools_fr: school[] = [
   {
-    "id": 1,
     "name": "IUT d'Orléans",
     "logo": "iut-orleans.webp",
     "degree": "BUT 3 Informatique - Développement d'applications",
@@ -40,7 +36,6 @@ const schools_fr: school[] = [
     "skills": ["Développement web backend", "Python", "Django", "Réseaux de neurones", "Base de données orientée graphe"]
   },
   {
-    "id": 2,
     "name": "Universidad Tecnológica de León",
     "logo": "utleon.webp",
     "degree": "TSU en Développement de logiciels multiplateforme",

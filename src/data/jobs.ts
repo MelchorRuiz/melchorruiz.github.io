@@ -1,5 +1,4 @@
 type Job = {
-  id: number;
   title: string;
   logo: string;
   employmentType: string;
@@ -14,7 +13,6 @@ type Job = {
 
 const jobs_es: Job[] = [
   {
-    "id": 1,
     "title": "Desarrollador full stack",
     "logo": "igeco-mexico.webp",
     "employmentType": "Contrato de prácticas",
@@ -30,7 +28,6 @@ const jobs_es: Job[] = [
 
 const jobs_fr: Job[] = [
   {
-    "id": 1,
     "title": "Développeur full stack",
     "logo": "igeco-mexico.webp",
     "employmentType": "Contrat de stage",
