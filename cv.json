@@ -1,364 +1,223 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Full Stack Developer",
-    "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+    "name": "Melchor Ruiz",
+    "label": "Desarrollador de software",
+    "image": "/melchor.webp",
+    "email": "ruizgonzalezmelchor3@gmail.com",
+    "phone": "+33 07-82-54-96-55",
+    "url": "https://melchor-ruiz.fr/",
+    "summary": "Tengo una sólida experiencia en desarrollo web fullstack, donde trabajo tanto en el frontend como en el backend, también estoy abierto a explorar otros campos del desarrollo de software. Mi versatilidad y curiosidad me permiten adaptarme rápidamente a nuevos desafíos y tecnologías.",
     "theme": "default",
     "location": {
       "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "postalCode": "",
+      "city": "París",
+      "countryCode": "FR",
+      "region": "Isla de Francia"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
-      },
-      {
-        "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "melchor-ruiz-gonzalez",
+        "url": "https://www.linkedin.com/in/melchor-ruiz-gonzalez/"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "MelchorRuiz",
+        "url": "https://github.com/MelchorRuiz"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
+      "name": "IRD",
+      "position": "Programador fullstack",
+      "location_type": "Presencial",
+      "location": "Isla de Francia, Francia",
+      "url": "https://www.ird.fr/",
+      "startDate": "2025-04-01",
       "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
-      "highlights": [
-        "Improved website performance by optimizing code"
-      ],
+      "summary": "Desarrollo de la plataforma MiCampo para la gestión de proyectos de investigación agrícola. Uso de tecnologías como Angular, Node.js y MongoDB para crear una aplicación web interactiva y escalable.",
       "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
-      ],
-      "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
+        "Diseño y desarrollo de la arquitectura de la aplicación utilizando Angular para el frontend y Node.js para el backend.",
+        "Implementación de servicios RESTful para la comunicación entre el frontend y el backend.",
+        "Mantenimiento y actualización de la base de datos MongoDB para garantizar un rendimiento óptimo."
       ],
       "skills": [
-        "React",
-        "Tailwind",
+        "Angular",
+        "Node",
+        "Express",
+        "MongoDB",
         "GitHub"
       ]
     },
     {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
-      "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
-      ],
+      "name": "IGECO Mexico",
+      "position": "Programador frontend",
+      "location_type": "Presencial",
+      "location": "León, Guanajuato, México",
+      "url": "https://igeco.mx",
+      "startDate": "2024-05-01",
+      "endDate": "2024-08-01",
+      "summary": "Desarrollo de landing pages para eventos internacionales como Foro Electromovilidad, Foro Nearshoring y Industrial Transformation México, contribuyendo a la optimización de la experiencia del usuario.",
       "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
+        "Diseño y desarrollo de landing pages utilizando Astro y Tailwind CSS para una experiencia de usuario fluida y atractiva.",
+        "Colaboración con el equipo de marketing para implementar estrategias de SEO y optimización de la conversión.",
+        "Mantenimiento y actualización de las páginas web para garantizar su funcionalidad y rendimiento."
       ],
       "skills": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git"
-      ]
-    },
-    {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
-      "highlights": [
-        "Completed several client projects successfully"
-      ],
-      "skills": [
-        "HTML",
-        "CSS"
-      ]
-    }
-  ],
-  "volunteer": [
-    {
-      "organization": "Local Coding Club",
-      "position": "Volunteer",
-      "url": "https://codingclub.com/",
-      "startDate": "2021-01-01",
-      "endDate": "2022-01-01",
-      "summary": "Helped organize coding workshops and mentored new members.",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
+        "Astro",
+        "React",
+        "Tailwind",
+        "Node",
+        "MySQL",
+        "GitHub"
       ]
     }
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
-      "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
-      ]
+      "institution": "Université d'Orléans",
+      "url": "https://www.univ-orleans.fr",
+      "area": "Informatique",
+      "startDate": "2024-09-01",
+      "endDate": null
     },
     {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
-      "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
-      "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
-    },
-    {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
-      ]
+      "institution": "Universidad Technológica de León",
+      "url": "https://utleon.edu.mx",
+      "area": "Desarrollo de Software Multiplataforma",
+      "startDate": "2022-09-01",
+      "endDate": "2024-08-01"
     }
   ],
   "certificates": [
     {
-      "name": "Full Stack Web Development",
+      "name": "CCNA: Introduction to Networks",
+      "date": "2023-03-01",
+      "issuer": "Cisco Networking Academy",
+      "url": "https://www.credly.com/badges/ef1dd2b7-cafe-4dc4-9456-4dfc6796f3ae/public_url"
+    },
+    {
+      "name": "CCNA: Switching, Routing, and Wireless Essentials",
       "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
+      "issuer": "Cisco Networking Academy",
+      "url": "https://www.credly.com/badges/8f6407ee-53fc-49ea-beff-4da406cb088e/public_url"
+    },
+    {
+      "name": "Partner: NDG Linux Essentials",
+      "date": "2023-08-01",
+      "issuer": "Cisco Networking Academy",
+      "url": "https://melchor-ruiz.fr/Partner-_NDG_Linux_Essentials_certificate.pdf"
     }
   ],
   "skills": [
     {
-      "name": "Figma",
-      "level": "Expert",
-      "keywords": [
-        "Design",
-        "UI"
-      ]
+      "name": "Python"
     },
     {
-      "name": "Gitlab",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
+      "name": "C"
     },
     {
-      "name": "HTML",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
+      "name": "Django"
     },
     {
-      "name": "CSS",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
+      "name": "HTML"
     },
     {
-      "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
+      "name": "CSS"
     },
     {
-      "name": "Tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
+      "name": "JavaScript"
     },
     {
-      "name": "TypeScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
+      "name": "Tailwind"
     },
     {
-      "name": "Node",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
+      "name": "TypeScript"
     },
     {
-      "name": "MySQL",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
+      "name": "Node"
     },
     {
-      "name": "Git",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
+      "name": "Java"
     },
     {
-      "name": "GitHub",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
+      "name": "MySQL"
     },
     {
-      "name": "Next.js",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
+      "name": "SQLite"
     },
     {
-      "name": "React",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    }
-  ],
-  "languages": [
-    {
-      "language": "English",
-      "fluency": "Native speaker"
+      "name": "Git"
     },
     {
-      "language": "Spanish",
-      "fluency": "Intermediate"
-    }
-  ],
-  "interests": [
+      "name": "GitHub"
+    },
     {
-      "name": "Technology",
-      "keywords": [
-        "AI",
-        "Blockchain"
-      ]
-    }
-  ],
-  "references": [
+      "name": "React"
+    },
     {
-      "name": "Jane Smith",
-      "reference": "Reference…"
+      "name": "Angular"
+    },
+    {
+      "name": "Express"
+    },
+    {
+      "name": "MongoDB"
+    },
+    {
+      "name": "Astro"
     }
   ],
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
+      "name": "Scriptia",
       "isActive": true,
-      "description": "A web application that provides weather information for any location.",
+      "description": "Semifinalista de la hackaton clerk 2025 organizada por Midudev.",
       "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
+        "Red social diseñada para los entusiastas de Linux.",
+        "Crear, probar y compartir tus propios scripts hechos en Bash, Python o NodeJs",
+        "Playground hecho con Docker para la ejecución de código"
       ],
-      "url": "https://weatherapp.com"
+      "url": "https://scriptia.melchor-ruiz.fr",
+      "github": "https://github.com/MelchorRuiz/Scriptia"
     },
     {
-      "name": "Task Manager",
+      "name": "Foro Electromovilidad 2024",
       "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
+      "description": "Landing page interactiva para el Foro Electromovilidad 2024, un evento internacional que reúne a expertos y líderes en movilidad eléctrica.",
       "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
+        "Desarrollo de una landing page interactiva utilizando Astro y Tailwind CSS",
+        "Implementación de un sistema de registro para participantes",
+        "Optimización para SEO y rendimiento"
       ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
+      "url": "https://foro-electromovilidad.igeco.mx",
+      "github": "https://github.com/MelchorRuiz/foro_electromovilidad_2024"
     },
     {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
+      "name": "CashPlash_Pro",
+      "isActive": true,
+      "description": "Aplicación de escritorio para la gestión de pequeños y medianos negocios, que permite administrar inventarios, ventas y usuarios.",
       "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
+        "Desarrollada con Electron, JavaScript y MongoDB",
+        "Interfaz de usuario intuitiva y fácil de usar",
+        "Soporte para agregar para múltiples módulos personalizados"
       ],
-      "url": "https://ecommerce.com"
+      "url": "https://github.com/MelchorRuiz/CashPlash_Pro/releases/tag/v1.0.0",
+      "github": "https://github.com/MelchorRuiz/CashPlash_Pro"
+    },
+    {
+      "name": "Sicefa",
+      "isActive": true,
+      "description": "Proyecto Sistema Central de Farmacias, elaborado en la Universidad Tecnologica de León durante mis estudios en TSU Desarrallo de Software Multiplataforma",
+      "highlights": [
+        "Desarrollado con Java, Jakarta EE y MySQL",
+        "Interfaz de usuario amigable para la gestión de farmacias",
+        "Funcionalidades de inventario, ventas y compras"
+      ],
+      "url": "https://sicefa.onrender.com",
+      "github": "https://github.com/MelchorRuiz/Sicefa"
     }
   ]
 }
