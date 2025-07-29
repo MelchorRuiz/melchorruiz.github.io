@@ -36,7 +36,7 @@
       "location": "Isla de Francia, Francia",
       "url": "https://www.ird.fr/",
       "startDate": "2025-04-01",
-      "endDate": null,
+      "endDate": "2025-07-10",
       "summary": "Desarrollo de la plataforma MiCampo para la gestión de proyectos de investigación agrícola. Uso de tecnologías como Angular, Node.js y MongoDB para crear una aplicación web interactiva y escalable.",
       "responsibilities": [
         "Diseño y desarrollo de la arquitectura de la aplicación utilizando Angular para el frontend y Node.js para el backend.",
